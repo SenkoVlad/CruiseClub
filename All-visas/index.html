@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js">
+  </script>
+
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="bg_layer" style="display: none"></div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand">
+          <img src="img/logo.png" alt="CruiseClub">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="basicExampleNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto d-flex">
+            <div class="nav-col px-2">
+              <li class="nav-item nav-head">
+                <a class="nav-link text-center" href="#">Всё о круизах</a>
+              </p>
+              <li class="nav-item nav-head">
+                <a class="nav-link text-center" href="#">О нас</a>
+              </p>
+            </div>
+            <div class="nav-col px-2">
+              <li class="nav-item nav-head">
+                <a class="nav-link text-center" href="#">Клиентам</a>
+              </p>
+              <li class="nav-item nav-head">
+                <a class="nav-link text-center" href="#" text-center>Агенствам</a>
+              </p>
+            </div>
+            <div class="nav-col px-2">
+              <li class="nav-item nav-head">
+                <a class="nav-link text-center" href="#">Costa Cruises</a>
+              </p>
+              <li class="nav-item nav-head">
+                <a class="nav-link text-center" href="#">Royal Cari</a>
+              </p>
+            </div>
+          </ul>
+
+
+          <ul class="navbar-nav d-flex flex-row nav-flex-icons justify-content-center">
+            <li class="nav-item d-flex align-items-center pr-2">
+              <a class="nav-link waves-effect waves-light">
+                <img src="img/currency.png" alt="">
+              </a>
+            </p>
+            <li class="nav-item d-flex align-items-center  pr-2" class="phone">
+              <a class="nav-link waves-effect waves-light" id="phone">
+                <img src="img/phone1.png">
+              </a>
+            </p>
+            <li class="nav-item d-flex align-items-center  pr-2">
+              <a class="nav-link waves-effect waves-light">
+                <img src="img/user.png" alt="">
+              </a>
+            </p>
+            <li class="nav-item d-flex align-items-center  pr-2">
+              <a class="flags-block nav-link waves-effect waves-light d-flex align-items-center language">
+                <div class="flags">
+                  <img src="img/russia.png" class="flag-rus" alt="">
+                  <img src="img/usa.png" class="flag-us" style="height: 27px; display: none" alt="">
+                </div>
+                <img src="img/arrow.png">
+              </a>
+            </p>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+   
+
+
+    <div class="main">
+      <div class="container mt-5">
+          <div class="row py-5">
+            <div class="col-3 col-xs-4 col-sm-3 col-md-4 d-flex align-items-center justify-content-center px-0">
+              <hr class="hr">
+            </div>
+            <div class="col-6 col-xs-4 col-sm-6 col-md-4 d-flex justify-content-center align-items-center px-0">
+              <div class="header__text d-flex align-items-center">
+                <!-- <div class="header__img d-flex align-items-center pr-4">
+                  <img src="img/quality.png" alt="">
+                </div> -->
+                <span class="visa">ВИЗЫ</span>
+              </div>
+            </div>
+            <div class="col-3 col-xs-4 col-sm-3  col-md-4 d-flex justify-content-center align-items-center px-0">
+              <hr class="hr">
+            </div>
+          </div>
+
+        <div class="row d-flex mb-3 justify-content-center">
+          <div class="col-12  main-item">
+            <div class="card d-flex">
+              <img class="card-img" src="img/bezviz.jpg" alt="">
+              <div class="card-img-overlay d-flex justify-content-center">
+                <div class="card-title card-title-head w-100 d-flex justify-content-center align-items-center">БЕЗВИЗОВЫЕ СТРАНЫ ДЛЯ ГРАЖДАН УКРАИНЫ И
+                  CТРАНЫ, КОТОРЫЕ ВЫДАЮТ ВИЗУ ПО ПРИБЫТИЮ</div>
+                <div class="card__hover">
+                  <div class="card__hover-text d-flex justify-content-center align-items-center flex-column mt-5">
+                    <p class="card__hover-text-18 mb-0">БЕЗВИЗОВЫЕ СТРАНЫ ДЛЯ ГРАЖДАН УКРАИНЫ И
+                      CТРАНЫ, КОТОРЫЕ ВЫДАЮТ ВИЗУ ПО ПРИБЫТИЮ</p>
+                    <a href="#" class="btn-head btn-more-info-head">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-flex mb-3 justify-content-center">
+          <div class="col-sm-6 mb-3 col-md-3 pb-0">
+            <div class="card d-flex">
+              <img class="card-img" src="img/1.jpg" alt="">
+              <div class="card-img-overlay d-flex justify-content-center">
+                <div class="card-title w-100 d-flex justify-content-center align-items-center">США</div>
+                <div class="card__hover">
+                  <div
+                    class="card__hover-text d-flex justify-content-center align-items-center flex-column mt-5">
+                    <img src="img/usa.jpg" class="flag-hover" alt="">
+                    <p class="card__hover-text-18 mb-0">США</p>
+                    <a href="#" class="btn btn-more-info">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-3 col-md-3">
+            <div class="card d-flex">
+              <img class="card-img" src="img/2.jpg" alt="">
+              <div class="card-img-overlay d-flex justify-content-center">
+                <div class="card-title w-100 d-flex justify-content-center align-items-center">ОАЭ</div>
+                <div class="card__hover">
+                  <div class="card__hover-text d-flex justify-content-center align-items-center flex-column mt-5">
+                    <img src="img/oae.jpg" class="flag-hover" alt="">
+                    <p class="card__hover-text-18 mb-0">ОАЭ</p>
+                    <a href="#" class="btn btn-more-info">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-3 col-md-3">
+            <div class="card d-flex">
+              <img class="card-img" src="img/3.jpg" alt="">
+              <div class="card-img-overlay d-flex justify-content-center">
+                <div class="card-title w-100 d-flex justify-content-center align-items-center">ИСЛАНДИЯ</div>
+                <div class="card__hover">
+                  <div class="card__hover-text d-flex justify-content-center align-items-center flex-column mt-5">
+                    <img src="img/island.jpg" class="flag-hover" alt="">
+                    <p class="card__hover-text-18 mb-0">ИСЛАНДИЯ</p>
+                    <a href="#" class="btn btn-more-info">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-3 col-md-3">
+            <div class="card d-flex">
+              <img class="card-img" src="img/4.jpg" alt="">
+              <div class="card-img-overlay d-flex justify-content-center">
+                <div class="card-title w-100 d-flex justify-content-center align-items-center">ИНДОНЕЗИЯ</div>
+                <div class="card__hover">
+                  <div class="card__hover-text d-flex justify-content-center align-items-center flex-column mt-5">
+                    <img src="img/indonesia.jpg" class="flag-hover" alt="">                    
+                    <p class="card__hover-text-18 mb-0">ИНДОНЕЗИЯ</p>
+                    <a href="#" class="btn btn-more-info">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row d-flex mb-3 justify-content-center">
+          <div class="col-sm-6 mb-3 col-md-3 pb-0">
+            <div class="card d-flex">
+              <img class="card-img" src="img/5.jpg" alt="">
+              <div class="card-img-overlay d-flex justify-content-center">
+                <div class="card-title w-100 d-flex justify-content-center align-items-center">ИНДИЯ</div>
+                <div class="card__hover">
+                  <div class="card__hover-text d-flex justify-content-center align-items-center flex-column mt-5">
+                    <img src="img/india.jpg" class="flag-hover" alt="">
+                    <p class="card__hover-text-18 mb-0">ИНДИЯ</p>
+                    <a href="#" class="btn btn-more-info">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-3 col-md-3">
+            <div class="card d-flex">
+              <img class="card-img" src="img/6.jpg" alt="">
+              <div class="card-img-overlay d-flex justify-content-center">
+                <div class="card-title w-100 d-flex justify-content-center align-items-center">ЕГИПЕТ</div>
+                <div class="card__hover">
+                  <div class="card__hover-text d-flex justify-content-center align-items-center flex-column mt-5">
+                    <img src="img/egipet.jpg" class="flag-hover" alt="">
+                    <p class="card__hover-text-18 mb-0">ЕГИПЕТ</p>
+                    <a href="#" class="btn btn-more-info">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-3 col-md-3">
+            <div class="card d-flex">
+              <img class="card-img" src="img/7.jpg" alt="">
+              <div class="card-img-overlay d-flex justify-content-center">
+                <div class="card-title w-100 d-flex justify-content-center align-items-center">ДАНИЯ</div>
+                <div class="card__hover">
+                  <div class="card__hover-text d-flex justify-content-center align-items-center flex-column mt-5">
+                    <img src="img/dania.jpg" class="flag-hover" alt="">
+                    <p class="card__hover-text-18 mb-0">ДАНИЯ</p>
+                    <a href="#" class="btn btn-more-info">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-3 col-md-3">
+            <div class="card d-flex">
+              <img class="card-img" src="img/8.jpg" alt="">
+              <div class="card-img-overlay d-flex justify-content-center">
+                <div class="card-title w-100 d-flex justify-content-center align-items-center">ГРЕЦИЯ</div>
+                <div class="card__hover">
+                  <div class="card__hover-text d-flex justify-content-center align-items-center flex-column mt-5">
+                    <img src="img/grecia.jpg" class="flag-hover" alt="">
+                    <p class="card__hover-text-18 mb-0">ГРЕЦИЯ</p>
+                    <a href="#" class="btn btn-more-info">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-flex mb-3 justify-content-center">
+          <div class="col-sm-6 mb-3 col-md-3 pb-0">
+            <div class="card d-flex">
+              <img class="card-img" src="img/9.jpg" alt="">
+              <div class="card-img-overlay d-flex justify-content-center">
+                <div class="card-title w-100 d-flex justify-content-center align-items-center">ВЬЕТНАМ</div>
+                <div class="card__hover">
+                  <div class="card__hover-text d-flex justify-content-center align-items-center flex-column mt-5">
+                    <img src="img/vietnam.jpg" class="flag-hover" alt="">
+                    <p class="card__hover-text-18 mb-0">ВЬЕТНАМ</p>
+                    <a href="#" class="btn btn-more-info">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-3 col-md-3">
+            <div class="card d-flex">
+              <img class="card-img" src="img/10.jpg" alt="">
+              <div class="card-img-overlay d-flex justify-content-center">
+                <div class="card-title w-100 d-flex justify-content-center align-items-center">ВЕЛИКОБРИТАНИЯ</div>
+                <div class="card__hover">
+                  <div class="card__hover-text d-flex justify-content-center align-items-center flex-column mt-5">
+                    <img src="img/britan.jpg" class="flag-hover" alt="">
+                    <p class="card__hover-text-18 mb-0">ВЕЛИКОБРИТАНИЯ</p>
+                    <a href="#" class="btn btn-more-info">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-3 col-md-3">
+            <div class="card d-flex">
+              <img class="card-img" src="img/11.jpg" alt="">
+              <div class="card-img-overlay d-flex justify-content-center">
+                <div class="card-title w-100 d-flex justify-content-center align-items-center">БРАЗИЛИЯ</div>
+                <div class="card__hover">
+                  <div class="card__hover-text d-flex justify-content-center align-items-center flex-column mt-5">
+                    <img src="img/brazil.jpg" class="flag-hover" alt="">
+                    <p class="card__hover-text-18 mb-0">БРАЗИЛИЯ</p>
+                    <a href="#" class="btn btn-more-info">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-3 col-md-3">
+            <div class="card d-flex">
+              <img class="card-img" src="img/12.jpg" alt="">
+              <div class="card-img-overlay d-flex justify-content-center">
+                <div class="card-title w-100 d-flex justify-content-center align-items-center">ИТАЛИЯ</div>
+                <div class="card__hover">
+                  <div class="card__hover-text d-flex justify-content-center align-items-center flex-column mt-5">
+                    <img src="img/italy.jpg" class="flag-hover" alt="">
+                    <p class="card__hover-text-18 mb-0">ИТАЛИЯ</p>
+                    <a href="#" class="btn btn-more-info">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-flex mb-3 justify-content-center">
+          <div class="col-sm-6 mb-3 col-md-3 pb-0">
+            <div class="card d-flex">
+              <img class="card-img" src="img/13.jpg" alt="">
+              <div class="card-img-overlay d-flex justify-content-center">
+                <div class="card-title w-100 d-flex justify-content-center align-items-center">ИСПАНИЯ</div>
+                <div class="card__hover">
+                  <div class="card__hover-text d-flex justify-content-center align-items-center flex-column mt-5">
+                    <img src="img/spain.jpg" class="flag-hover" alt="">
+                    <p class="card__hover-text-18 mb-0">ИСПАНИЯ</p>
+                    <a href="#" class="btn btn-more-info">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-3 col-md-3">
+            <div class="card d-flex">
+              <img class="card-img" src="img/14.jpg" alt="">
+              <div class="card-img-overlay d-flex justify-content-center">
+                <div class="card-title w-100 d-flex justify-content-center align-items-center">ПОРТУГАЛИЯ</div>
+                <div class="card__hover">
+                  <div class="card__hover-text d-flex justify-content-center align-items-center flex-column mt-5">
+                    <img src="img/portugal.jpg" class="flag-hover" alt="">
+                    <p class="card__hover-text-18 mb-0">ПОРТУГАЛИЯ</p>
+                    <a href="#" class="btn btn-more-info">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-3 col-md-3">
+            <div class="card d-flex">
+              <img class="card-img" src="img/15.jpg" alt="">
+              <div class="card-img-overlay d-flex justify-content-center">
+                <div class="card-title w-100 d-flex justify-content-center align-items-center">ФИНЛЯНДИЯ</div>
+                <div class="card__hover">
+                  <div class="card__hover-text d-flex justify-content-center align-items-center flex-column mt-5">
+                    <img src="img/finland.jpg" class="flag-hover" alt="">
+                    <p class="card__hover-text-18 mb-0">ФИНЛЯНДИЯ</p>
+                    <a href="#" class="btn btn-more-info">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-3 col-md-3">
+            <div class="card d-flex">
+              <img class="card-img" src="img/16.jpg" alt="">
+              <div class="card-img-overlay d-flex justify-content-center">
+                <div class="card-title w-100 d-flex justify-content-center align-items-center">ЭСТОНИЯ</div>
+                <div class="card__hover">
+                  <div class="card__hover-text d-flex justify-content-center align-items-center flex-column mt-5">
+                    <img src="img/estonia.jpg" class="flag-hover" alt="">
+                    <p class="card__hover-text-18 mb-0">ЭСТОНИЯ</p>
+                    <a href="#" class="btn btn-more-info">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-flex mb-5 mt-3 justify-content-start">
+          <div class="col-sm-6 mb-3 col-md-3 pb-0">
+            <div class="card d-flex">
+              <img class="card-img" src="img/17.jpg" alt="">
+              <div class="card-img-overlay d-flex justify-content-center">
+                <div class="card-title w-100 d-flex justify-content-center align-items-center">ФРАНЦИЯ</div>
+                <div class="card__hover">
+                  <div class="card__hover-text d-flex justify-content-center align-items-center flex-column mt-5">
+                    <img src="img/france.jpg" class="flag-hover" alt="">
+                    <p class="card__hover-text-18 mb-0">ФРАНЦИЯ</p>
+                    <a href="#" class="btn btn-more-info">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      <footer>
+        <div class="main-footer" style="background-color: #1f5f98;">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 d-flex flex-column">
+                <span style="color: #fff">(с) 2019 Cruise club</span>
+                <div class="cards-currency">
+                  <img style="height: 14px; width: 46px;" class="img-cards mr-3" src="img/visa.png" alt="">
+                  <img style="height: 26px; width: 42px;" class="img-cards" src="img/master-card.png" alt="">
+                </div>
+                <span class="currency">Курс валют на 11.04.2019</span>
+                <span class="currency dollar-euro">$ - 27.50 | &euro; - 31.00</span>
+              </div>
+              <div class="col-lg-9" style="color: #fff">
+                <div class="row footer-text">
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><a href="#">Всё о
+                      круизах</a></div>
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><a href="#">Клиентам</a>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><a href="#">Агенствам</a>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><a href="#">О нас</a>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><a href="#"> Costa
+                      Cruise</a></div>
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><a href="#">Roya
+                      Caribbean</a></div>
+                </div>
+                <div class="row footer-info pt-3">
+                  <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <img src="img/envelope.png" class="main-img" alt="" style="height:16px; width: 20px;">
+                    <div class="email-footer pl-3">
+                      <p class="pt-0"><a href="#">cruisedav@gmail.com</a></p>
+                      <p class="pt-0"><a href="#">cruisedav@gmail.com</a></p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <img src="img/phone-call.png" class="call-img" alt="" style="height:18px; width: 18px;">
+                    <div class="phone-footer pl-3">
+                      <p>+38 (044) 36p0 22 33</p>
+                      <p>+38 (044) 360 22 33</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-12 col-lg-4 d-flex justify-content-center">
+                    <img src="img/placeholder.png" class="location-img" alt="" style="height:21px; width: 15px;">
+                    <p class="pl-3">01042, г. Киев, бул. Дружбы Народов, 7, оф. 11</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col d-flex justify-content-end">
+                    <p class="creat-by">CreatedBy (c) 2019</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-10"></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+    </div>
+
+
+  </main>
+
+  <div id="phoneModal" class="modal-call">
+    <div class="header-modal d-flex justify-content-center">
+      <p>КАК С НАМИ СВЯЗАТЬСЯ</p>
+    </div>
+    <div class="body-modal">
+      <div class="body-modal-items d-flex justify-content-center align-items-center">
+        <img class="body-modal-item" src="img/phone1.png" alt="">
+        <span class="body-modal-item">+7 (985) 790 70 90</span>
+        <img class="body-modal-item" src="img/usa.png" alt="">
+      </div>
+      <div class="body-modal-items d-flex justify-content-center align-items-center">
+        <img class="body-modal-item" src="img/phone1.png" alt="">
+        <span class="body-modal-item">+7 (985) 790 70 90</span>
+        <img class="body-modal-item" src="img/usa.png" alt="">
+      </div>
+      <div class="body-modal-items d-flex justify-content-center align-items-center">
+        <img class="body-modal-item" src="img/phone1.png" alt="">
+        <span class="body-modal-item">+7 (985) 790 70 90</span>
+        <img class="body-modal-item" src="img/usa.png" alt="">
+      </div>
+      <div class="body-imgs d-flex justify-content-center">
+        <img class="body-modal-item" src="img/viber.png" alt="">
+        <img class="body-modal-item" src="img/telegram.png" alt="">
+        <img class="body-modal-item" src="img/whatsapp.png" alt="">
+      </div>
+      <div class="call-modal d-flex justify-content-center">
+        <a href="#" class="btn btn-more-info" id='orderCall'>Заказать звонок</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="callModal" class="modal-call">
+    <div class="header-modal d-flex justify-content-center">
+      <p>Заказать звонок</p>
+    </div>
+    <div class="body-modal">
+      <div class="body-modal-items mb-3 d-flex justify-content-center align-items-center">
+        <input id="" class="form-control" type="text" placeholder="Ваше имя*">
+      </div>
+      <div class="body-modal-items mb-3 d-flex justify-content-center align-items-center">
+        <input id="" class="form-control" type="text" placeholder="Номер телефона*">
+      </div>
+      <div class="body-modal-items mb-3 d-flex justify-content-center align-items-center">
+        <input id="" class="form-control" type="email" placeholder="E-mail*">
+      </div>
+      <div class="call-modal d-flex justify-content-center">
+        <a href="#" id="callMe" class="btn btn-more-info">Перезвонить мне</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="callMeModal" class="modal-call">
+    <div class="header-modal d-flex justify-content-center">
+      <p>Готово!</p>
+    </div>
+    <div class="body-modal">
+      <div class="body-modal-items mb-3 d-flex justify-content-center align-items-center">
+        <img src="img/shield.png" alt="">
+      </div>
+      <div class="body-modal-items mb-3 d-flex justify-content-center align-items-center">
+        <p>В ближайшее время наши специалисты свяжутся с Вами</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

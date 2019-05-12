@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js">
+  </script>
+  <script type="text/javascript" src="js/daterangepicker.js"></script>
+
+
+  <title>Document</title>
+</head>
+<body>
+  <div id="bg_layer" style="display: none"></div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand">
+          <img src="img/logo.png" alt="CruiseClub">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="basicExampleNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto d-flex">
+            <div class="nav-col px-2">
+              <li class="nav-item nav-head">
+                <a class="nav-link text-center" href="#">Всё о круизах</a>
+              </li>
+              <li class="nav-item nav-head">
+                <a class="nav-link text-center" href="#">О нас</a>
+              </li>
+            </div>
+            <div class="nav-col px-2">
+              <li class="nav-item nav-head">
+                <a class="nav-link text-center" href="#">Клиентам</a>
+              </li>
+              <li class="nav-item nav-head">
+                <a class="nav-link text-center" href="#" text-center>Агенствам</a>
+              </li>
+            </div>
+            <div class="nav-col px-2">
+              <li class="nav-item nav-head">
+                <a class="nav-link text-center" href="#">Costa Cruises</a>
+              </li>
+              <li class="nav-item nav-head">
+                <a class="nav-link text-center" href="#">Royal Cari</a>
+              </li>
+            </div>
+          </ul>
+
+  
+          <ul class="navbar-nav d-flex flex-row nav-flex-icons justify-content-center">
+            <li class="nav-item d-flex align-items-center pr-2">
+              <a class="nav-link waves-effect waves-light">
+                <img src="img/currency.png" alt="">
+              </a>
+            </li>
+            <li class="nav-item d-flex align-items-center  pr-2" class="phone">
+              <a class="nav-link waves-effect waves-light" id="phone">
+                <img src="img/phone1.png">
+              </a>
+            </li>
+            <li class="nav-item d-flex align-items-center  pr-2">
+              <a class="nav-link waves-effect waves-light">
+                <img src="img/user.png" alt="">
+              </a>
+            </li>
+            <li class="nav-item d-flex align-items-center  pr-2">
+              <a  class="flags-block nav-link waves-effect waves-light d-flex align-items-center language">
+                <div class="flags">
+                  <img src="img/russia.png" class="flag-rus active" alt="">
+                  <img src="img/usa.png" class="flag-us"style="height: 27px; display: none" alt="">
+                </div>
+                <img src="img/arrow.png">
+              </a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="bd-example">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/bg1.jpg" class="d-block" alt="...">
+            <div class="carousel-caption d-md-block carousel-caption-text">
+              <h1>Каждый день новое место</h1>
+              <h3>Каждый день новые приключения</h3>
+              <h5>Организация лучших круизов по всему миру</h5>
+              <a href="#" class="btn btn-more-info">Подробнее</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/bg1.jpg" class="d-block" alt="...">
+            <div class="carousel-caption d-md-block carousel-caption-text">
+              <h1>Каждый день новое место</h1>
+              <h3>Каждый день новые приключения</h3>
+              <h5>Организация лучших круизов по всему миру</h5>
+              <a href="#" class="btn btn-more-info">Подробнее</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/bg1.jpg" class="d-block" alt="...">
+            <div class="carousel-caption d-md-block carousel-caption-text">
+              <h1>Каждый день новое место</h1>
+              <h3>Каждый день новые приключения</h3>
+              <h5>Организация лучших круизов по всему миру</h5>
+              <a href="#" class="btn btn-more-info">Подробнее</a>
+            </div>
+          </div>
+          <!-- ПОИСК -->
+          <div class="container search">
+            <div class="row">
+              <div class="col-12">
+                
+                <div class="search__bg  d-flex align-items-center">
+                  <div class="search__select d-flex align-items-center">
+                    <div class="select_mate" data-mate-select="active">
+                      <span>Регион плаванья</span>
+                      <select name="" onchange="" onclick="return false;" id="">
+                        <option value="">Регион </option>
+                        <option value="1">Select option 1</option>
+                        <option value="2">Select option 2</option>
+                        <option value="3">Select option 3</option>
+                      </select>
+                      <p class="selecionado_opcion d-flex justify-content-center py-0" onclick="open_select(this)"></p><span onclick="open_select(this)"
+                        class="icon_select_mate"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z" />
+                          <path d="M0-.75h24v24H0z" fill="none" />
+                        </svg></span>
+                      <div class="cont_list_select_mate">
+                        <ul class="cont_select_int"> </ul>
+                      </div>
+                    </div>
+                    <img src="img/line-search.png" class="ml-2 search__line">
+                  </div>
+                  <div class="search__select d-flex align-items-center">
+                    <div class="select_mate" data-mate-select="active">
+                      <span>Круизная компания</span>
+                      <select name="" onchange="" onclick="return false;" id="">
+                        <option value="">Круизная компания </option>
+                        <option value="1">Select option 1</option>
+                        <option value="2">Select option 2</option>
+                        <option value="3">Select option 3</option>
+                      </select>
+                      <p class="selecionado_opcion py-0" onclick="open_select(this)"></p><span
+                        onclick="open_select(this)"
+                        class="icon_select_mate"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z" />
+                          <path d="M0-.75h24v24H0z" fill="none" />
+                        </svg></span>
+                      <div class="cont_list_select_mate">
+                        <ul class="cont_select_int"> </ul>
+                      </div>
+                    </div>
+                    <img src="img/line-search.png" class="ml-2 search__line">
+                  </div>
+                  <div class="search__select d-flex align-items-center">
+                    <div class="select_mate" data-mate-select="active">
+                      <span>Круизный лайнер</span>
+                      <select name="" onchange="" onclick="return false;" id="">
+                        <option value="">Круизный лайнер </option>
+                        <option value="1">Select option 1</option>
+                        <option value="2">Select option 2</option>
+                        <option value="3">Select option 3</option>
+                      </select>
+                      <p class="selecionado_opcion py-0" onclick="open_select(this)"></p><span onclick="open_select(this)"
+                        class="icon_select_mate"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z" />
+                          <path d="M0-.75h24v24H0z" fill="none" />
+                        </svg></span>
+                      <div class="cont_list_select_mate">
+                        <ul class="cont_select_int"> </ul>
+                      </div>
+                    </div>
+                    <img src="img/line-search.png" class="ml-0 search__line">
+                  </div>
+                  <span class="calendar-span d-inline-block">Дата круиза</span>
+                  <div class="search__calendar d-flex align-items-center mr-3">
+                    <input type="text" name="dates" class="form-control" />
+                    <img src="img/calendar1.png" class="search__select_icon h-95 mr-3">
+                    <script>
+                      $(function () {
+                        $('input[name="dates"]').daterangepicker({
+                          startDate: moment(),
+                          endDate: moment().add(730, 'day')
+                        });
+                      })
+                    </script>
+                  </div>
+                    <a href="#" class="search-btn d-flex justify-content-center">
+                      <img class="d-flex justify-content-center" src="img/search.png">
+                    </a>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-0">
+              <div class="col-12 d-flex justify-content-center">
+                <div class="search-footer d-flex justify-content-center">
+                  <a href="#" class="search-footer-item mr-5">Круизы</a>
+                  <a href="#" class="search-footer-item mr-5">Группы</a>
+                  <a href="#" class="search-footer-item mr-5">Отели</a>
+                  <a href="#" class="search-footer-item mr-5">Авиа</a>
+                  <a href="#" class="search-footer-item mr-5">Трансферы</a>
+                </div>
+              </div>  
+            </div>
+          </div>        
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+ 
+
+
+    </div>
+
+
+    <div class="main">
+      <div class="container">
+        <div class="main__header">
+          <div class="row py-5">
+            <div class="col-3 col-xs-4 col-sm-3 col-md-4 d-flex align-items-center justify-content-center px-0">
+              <hr class="hr">
+            </div>
+            <div class="col-6 col-xs-4 col-sm-6 col-md-4 d-flex justify-content-center align-items-center px-0">
+              <div class="header__text d-flex align-items-center">
+
+                <span class="recomend">МЫ РЕКОМЕНДУЕМ</span>
+              </div>
+            </div>
+            <div class="col-3 col-xs-4 col-sm-3  col-md-4 d-flex justify-content-center align-items-center px-0">
+              <hr class="hr">
+            </div>
+          </div>
+          <div class="row d-flex mb-3 justify-content-center">
+            <div class="col-lg-7 col-sm-12 pl-0 main-item">
+              <div class="card d-flex">
+                <img class="card-img" src="img/tur1.jpg" alt="">
+                <div class="card-img-overlay d-flex justify-content-center">
+                  <h5 class="card-title">Карибы</h5>
+                  <div class="card__hover d-flex justify-content-center align-items-center flex-column">
+                    <div class="card__hover-text d-flex justify-content-center align-items-center flex-column">
+                      <img src="img/placeholder1.png" class="card__hover-img" alt="">
+                      <p class="card__hover-text-24">Eвропа</p>
+                      <p class="card__hover-text-18">Европейские маршруты на лайнерах Royal Caribbean International </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-sm-12 pr-0 main-item">
+              <div class="card">
+                <img class="card-img" src="img/tur2.jpg" alt="">
+                <div class="card-img-overlay d-flex justify-content-center">
+                  <h5 class="card-title">Карибы</h5>
+                  <div class="card__hover d-flex justify-content-center align-items-center flex-column">
+                    <div
+                      class="card__hover-text d-flex justify-content-center align-items-center flex-column">
+                      <img src="img/placeholder1.png" class="card__hover-img" alt="">
+                      <p class="card__hover-text-24">Eвропа</p>
+                      <p class="card__hover-text-18">Европейские маршруты на лайнерах Royal Caribbean
+                        International </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-5 d-flex justify-content-center">
+            <div class="col-lg-5 col-sm-12 pl-0 main-item">
+              <div class="card">
+                <img class="card-img" src="img/tur3.jpg" alt="">
+                <div class="card-img-overlay d-flex justify-content-center">
+                  <h5 class="card-title">Карибы</h5>
+                  <div class="card__hover d-flex justify-content-center align-items-center flex-column">
+                    <div
+                      class="card__hover-text d-flex justify-content-center align-items-center flex-column">
+                      <img src="img/placeholder1.png" class="card__hover-img" alt="">
+                      <p class="card__hover-text-24">Eвропа</p>
+                      <p class="card__hover-text-18">Европейские маршруты на лайнерах Royal Caribbean
+                        International </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7 col-sm-12 pr-0  main-item">
+              <div class="card">
+                <img class="card-img" src="img/tur4.jpg" alt="">
+                <div class="card-img-overlay d-flex justify-content-center">
+                  <h5 class="card-title">Карибы</h5>
+                  <div class="card__hover d-flex justify-content-center align-items-center flex-column">
+                    <div
+                      class="card__hover-text d-flex justify-content-center align-items-center flex-column">
+                      <img src="img/placeholder1.png" class="card__hover-img" alt="">
+                      <p class="card__hover-text-24">Eвропа</p>
+                      <p class="card__hover-text-18">Европейские маршруты на лайнерах Royal Caribbean
+                        International </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <section class="pt-3" style="background: url(img/bg2.jpg) no-repeat center center;background-size: cover;">
+        <div class="container">
+          <div class="row py-5">
+            <div class="col-3 col-xs-4 col-sm-3 col-md-4  d-flex align-items-center justify-content-center px-0">
+              <hr class="hr">
+            </div>
+            <div class="col-6 col-xs-4 col-sm-6 col-md-4 d-flex justify-content-center align-items-center px-0">
+              <div class="header__text d-flex align-items-center">
+                <span class="hots-turs">ГОРЯЧИЕ ТУРЫ</span>
+              </div>
+            </div>
+            <div class="col-3 col-xs-4 col-sm-3  col-md-4 d-flex justify-content-center align-items-center px-0">
+              <hr class="hr">
+            </div>
+          </div>
+
+          <div class="main__turs">
+            <div class="tur mt-4">
+              <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                  <div class="tur-img">
+                  </div>
+                </div>  
+                <div class="col-lg-8 col-sm-12">
+                  <div class="tur__header">
+                    <h5>СРЕДИЗЕМНОМОРЬЕ</h5>
+                    <div class="tur__imgs">
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-sm-12 col-md-6 col-xl-3 pr-0 pl-4  mb-2">
+                          <span class="cruise">MSC Meraviglia 5*</span>
+                        </div> 
+                        <div class="col-sm-12 col-md-6 col-xl-3 pr-0 pl-4 mb-2">
+                          <span class="calendar">01.05.2019</span>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-3 pl-4 pr-0 mb-2">
+                          <span class="sunset">2 ночи</span>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-3  pl-4  pr-0 mb-2">
+                          <span class="cruise ml-4"><strong>3 443 грн.</strong></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tur__body">
+                    <p class="tur-text">B каюте две односпальные кровати, поставленные вместе или отдел</p>
+                    <p class="tur-text"><strong>Маршрут: </strong>Маршрут: Савона, Италия,Барселона, Испания,Марсель,
+                      Прованс, Франция, Савона, Италия.</p>
+                  </div>
+                  <div class="tur-btn d-flex justify-content-end">
+                    <a href="#" class="btn btn-more-info">Подробнее</a>
+                  </div>
+                </div>  
+              </div>
+            </div>
+            <div class="tur mt-4">
+              <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                  <div class="tur-img d-flex align-items-center">
+                  </div>
+                </div>
+                <div class="col-lg-8 col-sm-12">
+                  <div class="tur__header">
+                    <h5>СРЕДИЗЕМНОМОРЬЕ</h5>
+                    <div class="tur__imgs">
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-sm-12 col-md-6 col-xl-3 pr-0 pl-4  mb-2">
+                          <span class="cruise">MSC Meraviglia 5*</span>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-3 pr-0 pl-4 mb-2">
+                          <span class="calendar">01.05.2019</span>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-3 pl-4 pr-0 mb-2">
+                          <span class="sunset">2 ночи</span>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-3  pl-4  pr-0 mb-2">
+                          <span class="cruise ml-4"><strong>3 443 грн.</strong></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tur__body">
+                    <p class="tur-text">B каюте две односпальные кровати, поставленные вместе или отдел</p>
+                    <p class="tur-text"><strong>Маршрут: </strong>Маршрут: Савона, Италия,Барселона, Испания,Марсель,
+                      Прованс, Франция, Савона, Италия.</p>
+                  </div>
+                  <div class="tur-btn d-flex justify-content-end">
+                    <a href="#" class="btn btn-more-info">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tur mt-4">
+              <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                  <div class="tur-img d-flex align-items-center">
+                  </div>
+                </div>
+                <div class="col-lg-8 col-sm-12">
+                  <div class="tur__header">
+                    <h5>СРЕДИЗЕМНОМОРЬЕ</h5>
+                    <div class="tur__imgs">
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-sm-12 col-md-6 col-xl-3 pr-0 pl-4  mb-2">
+                          <span class="cruise">MSC Meraviglia 5*</span>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-3 pr-0 pl-4 mb-2">
+                          <span class="calendar">01.05.2019</span>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-3 pl-4 pr-0 mb-2">
+                          <span class="sunset">2 ночи</span>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-3  pl-4  pr-0 mb-2">
+                          <span class="cruise ml-4"><strong>3 443 грн.</strong></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tur__body">
+                    <p class="tur-text">B каюте две односпальные кровати, поставленные вместе или отдел</p>
+                    <p class="tur-text"><strong>Маршрут: </strong>Маршрут: Савона, Италия,Барселона, Испания,Марсель,
+                      Прованс, Франция, Савона, Италия.</p>
+                  </div>
+                  <div class="tur-btn d-flex justify-content-end">
+                    <a href="#" class="btn btn-more-info">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tur mt-4">
+              <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                  <div class="tur-img d-flex align-items-center">
+                  </div>
+                </div>
+                <div class="col-lg-8 col-sm-12">
+                  <div class="tur__header">
+                    <h5>СРЕДИЗЕМНОМОРЬЕ</h5>
+                    <div class="tur__imgs">
+                      <div class="row d-flex justify-content-center">
+                        <div class="col-sm-12 col-md-6 col-xl-3 pr-0 pl-4  mb-2">
+                          <span class="cruise">MSC Meraviglia 5*</span>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-3 pr-0 pl-4 mb-2">
+                          <span class="calendar">01.05.2019</span>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-3 pl-4 pr-0 mb-2">
+                          <span class="sunset">2 ночи</span>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-xl-3  pl-4  pr-0 mb-2">
+                          <span class="cruise ml-4"><strong>3 443 грн.</strong></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tur__body">
+                    <p class="tur-text">B каюте две односпальные кровати, поставленные вместе или отдел</p>
+                    <p class="tur-text"><strong>Маршрут: </strong>Маршрут: Савона, Италия,Барселона, Испания,Марсель,
+                      Прованс, Франция, Савона, Италия.</p>
+                  </div>
+                  <div class="tur-btn d-flex justify-content-end">
+                    <a href="#" class="btn btn-more-info">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="show-more-block d-flex justify-content-center">
+              <a href="#" class="show-more mt-4 d-flex justify-content-center">Показать ещё</a>
+            </div>
+            <div class="row py-5">
+              <div class="col-4 d-flex align-items-center justify-content-center px-0">
+                <hr class="hr">
+              </div>
+              <div class="col-4 d-flex justify-content-center align-items-center px-0">
+                <div class="header__text d-flex align-items-center">
+                  <span class="news">НОВОСТИ</span>
+                </div>
+              </div>
+              <div class="col-4 d-flex justify-content-center align-items-center px-0">
+                <hr class="hr">
+              </div>
+            </div>
+          </div>
+
+          <div class="main__news">
+            <div class="slider slick-vertical single-item">
+              <div class="slider-item">
+                <div class="news-date">
+                  <p>01 марта 2019</p>
+                </div>
+                <div class="news-head">
+                  <p>НОВЫЙ ТАРИФ ОТ КРУИЗНОЙ КОМПАНИИ NORWEGIAN CRUISE LINE</p>
+                </div>
+                <div class="news-text d-flex">
+                  <p>Данный тариф распространяется только на каюты, й тариф распространяется только на каюты, а именно:
+                    IX, OX. Данный тариф распространяется только на каюты, а именно: IX, OX, BX, MX...
+                    <span><a href="#" class="ml-3">Читать далее</a></span>
+                  </p>
+                </div>
+                <hr class="hr-news">
+              </div>
+              <div class="slider-item">
+                <div class="news-date">
+                  <p>01 марта 2019</p>
+                </div>
+                <div class="news-head">
+                  <p>НОВЫЙ ТАРИФ ОТ КРУИЗНОЙ КОМПАНИИ NORWEGIAN CRUISE LINE</p>
+                </div>
+                <div class="news-text d-flex">
+                  <p>Данный тариф распространяется только на каюты, й тариф распространяется только на каюты, а именно:
+                    IX, OX. Данный тариф распространяется только на каюты, а именно: IX, OX, BX, MX...
+                    <span><a href="#" class="ml-3" >Читать далее</a></span>
+                  </p>
+                </div>
+                <hr class="hr-news">
+              </div>
+              <div class="slider-item">
+                <div class="news-date">
+                  <p>01 марта 2019</p>
+                </div>
+                <div class="news-head">
+                  <p>НОВЫЙ ТАРИФ ОТ КРУИЗНОЙ КОМПАНИИ NORWEGIAN CRUISE LINE</p>
+                </div>
+                <div class="news-text d-flex">
+                  <p>Данный тариф распространяется только на каюты, й тариф распространяется только на каюты, а именно:
+                    IX, OX. Данный тариф распространяется только на каюты, а именно: IX, OX, BX, MX...
+                    <span><a href="#" class="ml-3">Читать далее</a></span>
+                  </p>
+                </div>
+                <hr class="hr-news">
+              </div>
+              <div class="slider-item">
+                <div class="news-date">
+                  <p>01 марта 2019</p>
+                </div>
+                <div class="news-head">
+                  <p>НОВЫЙ ТАРИФ ОТ КРУИЗНОЙ КОМПАНИИ NORWEGIAN CRUISE LINE</p>
+                </div>
+                <div class="news-text d-flex">
+                  <p>Данный тариф распространяется только на каюты, й тариф распространяется только на каюты, а именно:
+                    IX, OX. Данный тариф распространяется только на каюты, а именно: IX, OX, BX, MX...
+                    <span><a href="#" class="ml-3">Читать далее</a></span>
+                  </p>
+                </div>
+                <hr class="hr-news">
+              </div>
+              <div class="slider-item">
+                <div class="news-date">
+                  <p>01 марта 2019</p>
+                </div>
+                <div class="news-head">
+                  <p>НОВЫЙ ТАРИФ ОТ КРУИЗНОЙ КОМПАНИИ NORWEGIAN CRUISE LINE</p>
+                </div>
+                <div class="news-text d-flex">
+                  <p>Данный тариф распространяется только на каюты, й тариф распространяется только на каюты, а именно:
+                    IX, OX. Данный тариф распространяется только на каюты, а именно: IX, OX, BX, MX...
+                    <span><a href="#" class="ml-3">Читать далее</a></span>
+                  </p>
+                </div>
+                <hr class="hr-news">
+              </div>
+              <div class="slider-item">
+                <div class="news-date">
+                  <p>01 марта 2019</p>
+                </div>
+                <div class="news-head">
+                  <p>НОВЫЙ ТАРИФ ОТ КРУИЗНОЙ КОМПАНИИ NORWEGIAN CRUISE LINE</p>
+                </div>
+                <div class="news-text d-flex">
+                  <p>Данный тариф распространяется только на каюты, й тариф распространяется только на каюты, а именно:
+                    IX, OX. Данный тариф распространяется только на каюты, а именно: IX, OX, BX, MX...
+                    <span><a href="#" class="ml-3">Читать далее</a></span>
+                  </p>
+                </div>
+                <hr class="hr-news">
+              </div>
+            </div>
+            <div class="all-news d-flex justify-content-center">
+              <a href="#" class="all-news d-flex justify-content-center">Все новости</a>
+            </div>
+          </div>
+
+          <div class="row py-5 reviews">
+            <div class="col-3 d-flex align-items-center justify-content-center px-0">
+              <hr class="hr">
+            </div>
+            <div
+              class="col-12 col-xs-6 col-sm-6 col-md-6 col-lg-6  d-flex justify-content-center align-items-center px-0">
+              <div class="header__text d-flex align-items-center">
+                <span class="chats text-center">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</span>
+              </div>
+            </div>
+            <div class="col-3 d-flex justify-content-center align-items-center px-0">
+              <hr class="hr">
+            </div>
+          </div>
+
+          <div class="main__review pb-5">
+            <div class="slider single-item single-item-slider">
+              <div class="single-item-slide">
+                <div class="review__head">
+                  <p class="review__name d-flex justify-content-center">ВАСИЛИЙ</p>
+                  <p class="review__city d-flex justify-content-center"><ins>г. Киев</ins></p>
+                </div>
+                <div class="review__body px-3">
+                  <p class="review__text d-flex justify-content-center px-5 text-center">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Vitae aliquid, rem, ex officia esse dignissimos ullam ea modi quo voluptate eum, ducimus quas
+                    nulla deleniti eaque. Rem, neque! Eos culpa ducimus voluptatem nisi repellendus explicabo eligendi nostrum,
+                    repudiandae qui, consequatur amet facilis, deserunt quibusdam vel. Blanditiis officia ipsam debitis numquam.</p>
+                </div>
+                <div class="review__footer d-flex justify-content-center">
+                  <a href="#" class="btn btn-add-review">Добавить отзыв</a>
+                </div>
+              </div>
+              <div class="single-item-slide">
+                <div class="review__head">
+                  <p class="review__name d-flex justify-content-center">ВАСИЛИЙ</p>
+                  <p class="review__city d-flex justify-content-center"><ins>г. Киев</ins></p>
+                </div>
+                <div class="review__body px-3">
+                  <p class="review__text d-flex justify-content-center px-5 text-center">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Vitae aliquid, rem, ex officia esse dignissimos ullam ea modi quo voluptate eum, ducimus quas
+                    nulla deleniti eaque. Rem, neque! Eos culpa ducimus voluptatem nisi repellendus explicabo eligendi nostrum,
+                    repudiandae qui, consequatur amet facilis, deserunt quibusdam vel. Blanditiis officia ipsam debitis numquam.</p>
+                </div>
+                <div class="review__footer d-flex justify-content-center">
+                  <a href="#" class="btn btn-add-review">Добавить отзыв</a>
+                </div>
+              </div>
+              <div class="single-item-slide">
+                <div class="review__head">
+                  <p class="review__name d-flex justify-content-center">ВАСИЛИЙ</p>
+                  <p class="review__city d-flex justify-content-center"><ins>г. Киев</ins></p>
+                </div>
+                <div class="review__body px-3">
+                  <p class="review__text d-flex justify-content-center px-5 text-center">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Vitae aliquid, rem, ex officia esse dignissimos ullam ea modi quo voluptate eum, ducimus quas
+                    nulla deleniti eaque. Rem, neque! Eos culpa ducimus voluptatem nisi repellendus explicabo eligendi nostrum,
+                    repudiandae qui, consequatur amet facilis, deserunt quibusdam vel. Blanditiis officia ipsam debitis numquam.</p>
+                </div>
+                <div class="review__footer d-flex justify-content-center">
+                  <a href="#" class="btn btn-add-review">Добавить отзыв</a>
+                </div>
+              </div>
+              <div class="single-item-slide">
+                <div class="review__head">
+                  <p class="review__name d-flex justify-content-center">ВАСИЛИЙ</p>
+                  <p class="review__city d-flex justify-content-center"><ins>г. Киев</ins></p>
+                </div>
+                <div class="review__body px-3">
+                  <p class="review__text d-flex justify-content-center px-5 text-center">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Vitae aliquid, rem, ex officia esse dignissimos ullam ea modi quo voluptate eum, ducimus quas
+                    nulla deleniti eaque. Rem, neque! Eos culpa ducimus voluptatem nisi repellendus explicabo eligendi nostrum,
+                    repudiandae qui, consequatur amet facilis, deserunt quibusdam vel. Blanditiis officia ipsam debitis numquam.</p>
+                </div>
+                <div class="review__footer d-flex justify-content-center">
+                  <a href="#" class="btn btn-add-review">Добавить отзыв</a>
+                </div>
+              </div>
+              <div class="single-item-slide">
+                <div class="review__head">
+                  <p class="review__name d-flex justify-content-center">ВАСИЛИЙ</p>
+                  <p class="review__city d-flex justify-content-center"><ins>г. Киев</ins></p>
+                </div>
+                <div class="review__body px-3">
+                  <p class="review__text d-flex justify-content-center px-5 text-center">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Vitae aliquid, rem, ex officia esse dignissimos ullam ea modi quo voluptate eum, ducimus quas
+                    nulla deleniti eaque. Rem, neque! Eos culpa ducimus voluptatem nisi repellendus explicabo eligendi nostrum,
+                    repudiandae qui, consequatur amet facilis, deserunt quibusdam vel. Blanditiis officia ipsam debitis numquam.</p>
+                </div>
+                <div class="review__footer d-flex justify-content-center">
+                  <a href="#" class="btn btn-add-review">Добавить отзыв</a>
+                </div>
+              </div>
+              <div class="single-item-slide">
+                <div class="review__head">
+                  <p class="review__name d-flex justify-content-center">ВАСИЛИЙ</p>
+                  <p class="review__city d-flex justify-content-center"><ins>г. Киев</ins></p>
+                </div>
+                <div class="review__body px-3">
+                  <p class="review__text d-flex justify-content-center px-5 text-center">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Vitae aliquid, rem, ex officia esse dignissimos ullam ea modi quo voluptate eum, ducimus quas
+                    nulla deleniti eaque. Rem, neque! Eos culpa ducimus voluptatem nisi repellendus explicabo eligendi nostrum,
+                    repudiandae qui, consequatur amet facilis, deserunt quibusdam vel. Blanditiis officia ipsam debitis numquam.</p>
+                </div>
+                <div class="review__footer d-flex justify-content-center">
+                  <a href="#" class="btn btn-add-review">Добавить отзыв</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </section>  
+    
+      <footer>
+        <div class="container">
+          <div class="mail py-5">
+            <div class="main__head d-flex justify-content-center pb-3">
+              <h5>ХОТИТЕ БЫТЬ В КУРСЕ?</h5>
+            </div>
+            <div class="main__body">
+              <div class="row d-flex align-items-baseline justify-content-center">
+                <div class="col-lg-4 col-sm-12 pr-3 d-flex align-items-baseline  justify-content-center">
+                  <label for="email">Присоединяся к нашим подписчикам</label>
+                </div>
+                <div class="col-lg-5 col-md-8 d-flex align-items-baseline justify-content-center pl-0">
+                  <div class="row d-flex align-items-baseline">
+                    <input type="email" class="w-100" name="email" id="" placeholder="E-mail">
+                    <div class="radio-status col-lg-12 col-sm-8 d-flex justify-content-start px-0 mt-2">
+                      <div class="join d-flex align-items-center justify-content-center">
+                        <span class="pr-1"> Присоединяюсь как</span>
+                        <input type="radio" name="join" id="" checked><span class="px-2">Клиент</span>
+                        <input type="radio" name="join" id=""><span class="px-2">Агент</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 d-flex align-items-baseline btn-join pr-0">
+                  <a href="#" class="btn btn-email">Отправить</a>
+                </div>
+              </div>
+            </div>
+            <div class="mail__footer d-flex align-items-center justify-content-around flex-wrap pt-3">
+              <div class="mail__footer-img">
+                <img src="img/1.png" alt="" class="main__footer-img">
+              </div> 
+              <div class="mail__footer-img">
+                <img src="img/2.png" alt="" class="main__footer-img">
+              </div> 
+              <div class="mail__footer-img">
+                <img src="img/3.png" alt="" class="main__footer-img">
+              </div> 
+              <div class="mail__footer-img">
+                <img src="img/4.png" alt="" class="main__footer-img">
+              </div> 
+              <div class="mail__footer-img">
+                <img src="img/5.png" alt="" class="main__footer-img">
+              </div> 
+              <div class="mail__footer-img">
+                <img src="img/6.png" alt="" class="main__footer-img">
+              </div> 
+            </div>
+          </div>
+        </div>
+
+        <div class="main-footer" style="background-color: #1f5f98;">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 d-flex flex-column">
+                <span style="color: #fff">(с) 2019 Cruise club</span>
+                <div class="cards-currency">
+                  <img style="height: 14px; width: 46px;" class="img-cards mr-3" src="img/visa.png" alt="">
+                  <img style="height: 26px; width: 42px;" class="img-cards" src="img/master-card.png" alt="">
+                </div>
+                <span class="currency">Курс валют на 11.04.2019</span>
+                <span class="currency dollar-euro">$ - 27.50 | &euro; - 31.00</span>
+              </div>
+              <div class="col-lg-9" style="color: #fff">
+                <div class="row footer-text">
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><a href="#">Всё о круизах</a></div>
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><a href="#">Клиентам</a></div>
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><a href="#">Агенствам</a></div>
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><a href="#">О нас</a></div>
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><a href="#"> Costa Cruise</a></div>
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><a href="#">Roya Caribbean</a></div>
+                </div>
+                <div class="row footer-info pt-3">
+                  <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <img src="img/envelope.png" class="main-img" alt="" style="height:16px; width: 20px;">
+                    <div class="email-footer pl-3">
+                      <p class="pt-0"><a href="#">cruisedav@gmail.com</a></p>
+                      <p class="pt-0"><a href="#">cruisedav@gmail.com</a></p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <img src="img/phone-call.png" class="call-img" alt=""  style="height:18px; width: 18px;">
+                    <div class="phone-footer pl-3">
+                      <p>+38 (044) 36p0 22 33</p>
+                      <p>+38 (044) 360 22 33</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-12 col-lg-4 d-flex justify-content-center">
+                    <img src="img/placeholder.png" class="location-img" alt=""  style="height:21px; width: 15px;">
+                    <p class="pl-3">01042, г. Киев, бул. Дружбы Народов, 7, оф. 11</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col d-flex justify-content-end">
+                    <p class="creat-by">CreatedBy (c) 2019</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-10"></div>
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+
+      
+
+    </div>
+
+
+  </main>
+
+  <div id="phoneModal" class="modal-call">
+    <div class="header-modal d-flex justify-content-center">
+      <p>КАК С НАМИ СВЯЗАТЬСЯ</p>
+    </div>
+    <div class="body-modal">
+      <div class="body-modal-items d-flex justify-content-center  mb-2">
+        <span class="body-modal-item phone d-flex align-items-center">+7 (985) 790 70 90</span>
+      </div> 
+      <div class="body-modal-items d-flex justify-content-center mb-2">
+        <span class="body-modal-item phone d-flex align-items-center">+7 (985) 790 70 90</span>
+      </div>
+      <div class="body-modal-items d-flex justify-content-center  mb-2">
+        <span class="body-modal-item phone d-flex align-items-center">+7 (985) 790 70 90</span>
+      </div>
+      <div class="body-imgs d-flex justify-content-center mt-3">
+        <a class="body-modal-item-viber mr-2" alt=""></a>
+        <a class="body-modal-item-telegram mr-2" alt=""></a>
+        <a class="body-modal-item-whatsapp"  alt=""></a>
+      </div>
+      <div class="call-modal d-flex justify-content-center">
+        <a href="#" class="btn btn-more-info" id='orderCall'>Заказать звонок</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="callModal" class="modal-call">
+    <div class="header-modal d-flex justify-content-center">
+      <p>Заказать звонок</p>
+    </div>
+    <div class="body-modal">
+      <div class="body-modal-items mb-3 d-flex justify-content-center align-items-center">
+        <input id="" class="form-control" type="text" placeholder="Ваше имя*">
+      </div>
+      <div class="body-modal-items mb-3 d-flex justify-content-center align-items-center">
+        <input id="" class="form-control" type="text" placeholder="Номер телефона*">
+      </div>
+      <div class="body-modal-items mb-3 d-flex justify-content-center align-items-center">
+        <input id="" class="form-control" type="email" placeholder="E-mail*">
+      </div>
+      <div class="call-modal d-flex justify-content-center">
+        <a href="#" id="callMe" class="btn btn-more-info">Перезвонить мне</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="callMeModal" class="modal-call">
+    <div class="header-modal d-flex justify-content-center">
+      <p>Готово!</p>
+    </div>
+    <div class="body-modal">
+      <div class="body-modal-items mb-3 d-flex justify-content-center align-items-center">
+        <img src="img/shield.png" alt="">
+      </div>
+      <div class="body-modal-items mb-3 d-flex justify-content-center align-items-center">
+        <p>В ближайшее время наши специалисты свяжутся с Вами</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

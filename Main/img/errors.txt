@@ -1,0 +1,9 @@
+[Thu Apr 18 2019 20:48:21 GMT+0300 (RTZ 2 (зима))] layer "+ 7 (985) 790 70 90": Expected Either a default asset specification or a layer asset specification but "+" found.
+[Thu Apr 18 2019 20:48:21 GMT+0300 (RTZ 2 (зима))] layer "+ 7 (707) 790 70 90": Expected Either a default asset specification or a layer asset specification but "+" found.
+[Thu Apr 18 2019 20:48:21 GMT+0300 (RTZ 2 (зима))] layer "+ 380 68 790 70 90": Expected Either a default asset specification or a layer asset specification but "+" found.
+[Thu Apr 18 2019 20:48:21 GMT+0300 (RTZ 2 (зима))] layer "cruisedav@gmail.com": Unsupported extension: com
+[Thu Apr 18 2019 20:48:21 GMT+0300 (RTZ 2 (зима))] layer "+38 (044) 360 22 33": Expected Either a default asset specification or a layer asset specification but "+" found.
+[Thu Apr 18 2019 20:48:21 GMT+0300 (RTZ 2 (зима))] layer "+38 (067) 926 02 61": Expected Either a default asset specification or a layer asset specification but "+" found.
+[Thu Apr 18 2019 20:48:21 GMT+0300 (RTZ 2 (зима))] layer "cruisedav1@gmail.com": Unsupported extension: com
+[Thu Apr 18 2019 20:48:21 GMT+0300 (RTZ 2 (зима))] layer "calendar.png": Duplicate path: calendar.png
+[Thu Apr 18 2019 20:48:21 GMT+0300 (RTZ 2 (зима))] layer "placeholder.png": Duplicate path: placeholder.png

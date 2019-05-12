@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js">
+  </script>
+
+
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="bg_layer" style="display: none"></div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand">
+          <img src="img/logo.png" alt="CruiseClub">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="basicExampleNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto d-flex">
+            <div class="nav-col px-2">
+              <li class="nav-item nav-head">
+                <a class="nav-link  text-center" href="#">Всё о круизах</a>
+              </p>
+              <li class="nav-item nav-head">
+                <a class="nav-link  text-center" href="#">О нас</a>
+              </p>
+            </div>
+            <div class="nav-col px-2">
+              <li class="nav-item nav-head">
+                <a class="nav-link  text-center" href="#">Клиентам</a>
+              </p>
+              <li class="nav-item nav-head">
+                <a class="nav-link  text-center" href="#" text-center>Агенствам</a>
+              </p>
+            </div>
+            <div class="nav-col px-2">
+              <li class="nav-item nav-head">
+                <a class="nav-link text-center" href="#">Costa Cruises</a>
+              </p>
+              <li class="nav-item nav-head">
+                <a class="nav-link text-center" href="#">Royal Cari</a>
+              </p>
+            </div>
+          </ul>
+
+
+          <ul class="navbar-nav d-flex flex-row nav-flex-icons justify-content-center">
+            <li class="nav-item d-flex align-items-center pr-2">
+              <a class="nav-link waves-effect waves-light">
+                <img src="img/currency.png" alt="">
+              </a>
+            </p>
+            <li class="nav-item d-flex align-items-center  pr-2" class="phone">
+              <a class="nav-link waves-effect waves-light" id="phone">
+                <img src="img/phone1.png">
+              </a>
+            </p>
+            <li class="nav-item d-flex align-items-center  pr-2">
+              <a class="nav-link waves-effect waves-light">
+                <img src="img/user.png" alt="">
+              </a>
+            </p>
+            <li class="nav-item d-flex align-items-center  pr-2">
+              <a class="flags-block nav-link waves-effect waves-light d-flex align-items-center language">
+                <div class="flags">
+                  <img src="img/russia.png" class="flag-rus" alt="">
+                  <img src="img/usa.png" class="flag-us" style="height: 27px; display: none" alt="">
+                </div>
+                <img src="img/arrow.png">
+              </a>
+            </p>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+   
+
+
+    <div class="main">
+      <div class="container mt-5">
+        <div class="row">          
+          <div class="col-12 d-flex justify-content-center">
+            <div class="wrap-cauntry py-5 d-flex justify-content-center" style="background: url(img/1.jpg) no-repeat center center">
+              <div class="cauntry">
+                <p class="name-cauntry d-flex justify-content-center mb-5">СОЕДИНЁННЫЕ ШТАТЫ АМЕРИКИ</p>
+                <p class="embassy d-flex justify-content-center">ПОСОЛЬСТВО СОЕДИНЕННЫХ ШТАТОВ АМЕРИКИ В УКРАИНЕ:</p>
+                <div class="info">
+                  <div class="info-item d-flex justify-content-center">
+                    <img src="img/address.png" alt="" class="address-img" style="height: 27px;">
+                    <p class="address d-flex justify-content-center my-0">ул. Авиаконструктора Игоря Сикорского, 4, г. Киев,
+                      04112
+                      (бывшее название улицы - ул. Танковая</p>
+                  </div>
+                  <div class="info-item d-flex justify-content-center">
+                    <img src="img/phone-icom.png" alt="" class="phone-img" style="height: 24px;">
+                    <p class="phone-1 d-flex justify-content-center my-0">044-207-7071 из Украины (колл-центр)</p>
+                  </div>
+                  <div class="info-item d-flex justify-content-center">
+                    <img src="img/phone-icom.png" alt="" class="phone-img" style="height: 24px;">
+                    <p class="phone-2 d-flex justify-content-center my-0">1-888-826-2340 из США (колл-центр)</p>
+                  </div>
+                  <div class="info-item d-flex justify-content-center">
+                    <img src="img/phone-icom.png" alt="" class="phone-img" style="height: 24px;">
+                    <p class="phone-3 d-flex justify-content-center mt-0 mb-5">044-490-4422 круглосуточный автоответчик
+                    Консульского
+                    отдела</p>
+                  </div>
+                  <p class="embassy d-flex justify-content-center">ПРАВИЛА ОФОРМЛЕНИЯ ТУРИСТИЧЕСКИХ ВИЗ В США:</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="visa-regulations">
+              <p class="p-text-regulations mb-1">Консульский отдел рассматривает заявления на получение неиммиграционных виз
+                с понедельника по четверг, только по назначенному собеседованию. Записаться на собеседование можно купив
+                пин-код. Собеседование будет назначено на первую свободную дату, или по желанию аппликата, на любую
+                другую свободную дату.</p>
+              <p class="p-text-regulations mb-1">В день интервью аппликату следует явиться на собеседование как минимум на 15
+                минут раньше назначенного времени, чтоб получить возможность пройти через охрану. Аппликатам разрешено
+                заходить на территорию Консульского отдела только во время их визового собеседования.</p>
+              <p class="p-text-regulations mb-1">Консульский отдел просит аппликантов приносить на визовое собеседование все
+                документы, которые относятся к делу, если они могут быть полезными (предоставлять детальную информацию).</p>
+              <p class="p-text-regulations mb-1">Офицеры Консульского Отдела США электронным способом сканируют отпечатки
+                левого и правого указательных пальцев всех лиц, которые обращаются за визами, кроме детей до 13 лет и
+                лиц старше 80 лет.</p>
+              <p class="p-text-regulations mb-1"><span style="margin-right: 20px;">*</span> Офицеры проводят сканирование во время собеседования.
+                Процедура
+                электронного сканирования занимает всего лишь несколько секунд и происходит без использования краски.</p>
+              <p class="p-text-regulations mb-1"><span style="margin-right: 20px;">*</span> Если лица имеют порез или воспаление на одном из указательных
+                пальцев,
+                Консульский Офицер не сможет отсканировать отпечатки пальцев. В таком случае аппликант должен будет
+                вернуться в Консульский Отдел, когда рана заживет.</p>
+            </div>
+
+            <div class="p-head-text d-flex justify-content-center my-4">
+              <p class="embassy text-center">НЕОБОХИМЫЕ ДОКУМЕНТЫ ДЛЯ ПОЛУЧЕНИЯ ТУРИСТИЧЕСКОЙ ВИЗЫ ПОД КРУИЗ:</p>
+            </div>
+            
+            <div class="visa-have-with-you mb-5">
+                <p class="mb-1"><span>•</span> Загранпаспорт – срок действия которого заканчивается не менее чем за 6 месяцев до предполагаемой
+                  даты поездки.</p>
+                <p class="mb-1"><span>•</span> 1 фото размером 5х5./p>
+                <p class="mb-1"><span>•</span> Оплата консульского сбора</p>
+                <p class="mb-1"><span>•</span> Заполненная визовая анкета DS 160.</p>
+                <p class="mb-1"><span>•</span> Справка с места работы в качестве подтверждения платежеспособности туриста, с указанием должности,
+                  срока работы в компании, уровня заработной платы, а также того, что за ним сохраняется место работы
+                  (для неработающих должны подаваться другие формы финансовых гарантий); Справка должна быть подписана
+                  бухгалтером и директором.</p>
+                <p class="mb-1"><span>•</span> Письмо от украинской фирмы, рассказывающее о её деятельности – ЖЕЛАТЕЛЬНО, либо рекламные буклеты,
+                  проспекты…</p>
+                <p class="mb-1"><span>•</span> Финансовые гарантии: кредитная карточка, выписка из банковского счёта. </p>
+                <p class="mb-1"><span>•</span> При наличии двух ЗП – необходима подача обоих.</p>
+                <p class="mb-1"><span>•</span> Для детей: нотариально заверенное разрешение родителей с копиями их паспортов.</p>
+                <p class="mb-1"><span>•</span> Документы, подтверждающие наличие недвижимости – ксерокопии о собственности на квартиру, машину,
+                  другое недвижимое/движимое имущество.</p>
+                <p class="mb-1"><span>•</span> Ксерокопии свидетельств о браке, рождении детей.</p>
+                <p class="mb-1"><span>•</span> Ксерокопия идентификационного кода.</p>
+                <p class="mb-1"><span>•</span> Ксерокопия ВСЕХ страниц внутреннего паспорта.</p>
+                <p class="mb-1"><span>•</span> Анкетные данные туриста (заполнение обязательно).</p>
+            </div>
+
+            <div class="p-head-text d-flex justify-content-center my-4">
+              <p class="embassy text-center">ЧТО НЕОБХОДИМО ИМЕТЬ С СОБОЙ ВО ВРЕМЯ ПРОХОЖДЕНИЯ ВИЗОВОГО СОБЕСЕДОВАНИЯ:</p>
+            </div>
+
+            <div class="visa-have-with-you mb-5">
+              <p class="mb-1"><span>1.</span>Действующий заграничный паспорт (срок действия должен на 6 месяцев
+                превышать дату запланированной поездки).</p>
+              <p class="mb-1"><span>2.</span>Пластиковую Смарт-карточку и квитанцию ПроКредит Банка об оплате за
+                рассмотрение документов на рассмотрение визы для каждого апликанта.</p>
+                <p class="mb-1"><span>3.</span>Заполненную визовую анкету (форма DS-160)</p>
+                <p class="mb-1"><span>4.</span>1 фото на каждого апликанта, которая соответствует требованиям:</p>
+                <p class="mb-1"><span class="ml-4">•</span>Не обрамлённая.</p>
+                <p class="mb-1"><span class="ml-4">•</span>Полностью изображает лицо. Это карточка, на которой человек смотрит прямо
+                  в объектив. Человек не должен смотреть вниз или в сторону, лицо должно занимать 50% площади всей
+                  фотографии. Уши желательно оставить открытыми.</p>
+                <p class="mb-1"><span class="ml-4">•</span>Сделанная на протяжении последних 6 месяцев.</p>
+                <p class="mb-1"><span class="ml-4">•</span>Размер фотографии 5см х 5см, голова находится в центре фотографии. Размер
+                  головы на карточке (от верху головы до низу подбородка) равняется 2,5см - 3,5см, а глаза размещаются
+                  на высоте 2,8см-3,5см от низа фотографии.</p>
+                <p class="mb-1"><span>•</span>Быть цветной и сделанной на белом фоне.</p>
+                <p class="mb-1"><span>5.</span>8.00 долларов США для оплаты курьерской доставке паспорта с визой (можно
+                  оплатить в гривнах).</p>
+                <p class="mb-1"><span>6.</span>Оплата консульского сбора</p>
+                <p class="mb-1"><span>7.</span>Для студентов и участников программ обмена – оригинал и копию форм DS-2019
+                  (для участников программ обмена) или I-20 (для студентов)</p>
+                <p class="mb-1"><span>8.</span>Для студентов – копию последней выписки из зачётной книги студента</p>
+                <p class="mb-1"><span>9.</span>Другие документы, которые подтверждают статус апликанта в Украине или США.
+                </p>
+            </div>
+
+            <div class="p-head-text d-flex justify-content-center my-4">
+              <p class="embassy">ДЛЯ ТУРИСТИЧЕСКОЙ ВИЗЫ</p>
+            </div>
+
+            <div class="visa-have-with-you">
+              <p class="mb-1"><span>1.</span>Обоснованное письмо-приглашение, которое объясняет суть и цель путешествия
+                в США, а также связи между приглашающим и апликантом. Письмо не должно быть нотариально заверенным.</p>
+              <p class="mb-1"><span>2.</span>Детям до 14 лет (13 и младше) не обязательно присутствовать на
+                собеседовании, если они не едут на учёбу в США.</p>
+              <p class="mb-1"><span>3.</span>Во всех случаях, когда за визой обращаются дети до 16 лет, желательно
+                присутствие обоих родителей на визовом собеседовании. Они должны меть при себе свои паспорта и
+                свидетельство о рождении ребёнка, а также соответствующие документы для получения визы и проездной
+                документ ребёнка. Когда же кто-то из родителей не может присутствовать на собеседовании, необходимо
+                предоставить следующее:</p>
+              <p class="mb-1"><span class="ml-4">•</span>Нотариально заверенное показание того из родителей, которой не
+                может
+                присутствовать на собеседовании, в котором идёт речь о том, что он/она дают разрешение ребёнку
+                путешествовать до США, а также фотокопию оригинала страниц с биографическими данными и подписью из
+                его/её внутреннего или заграничного паспорта; или</p>
+              <p class="mb-1"><span class="ml-4">•</span>Свидетельство о смерти одного из родителей (в случае смерти)
+                или
+                доказательства о том, что одного из родителей было избавлено от родительских прав.</p>
+              </p>
+            </div>
+
+            <div class="visa-footer d-flex justify-content-center text-center mt-5">
+              <p class="text">
+                Если вы не можете заняться оформлением визы самостоятельно - компания Cruise Club готова предоставить
+                данную услугу, стоимость которой составит 230 долларов. (услуги оформления визы + визовый сбор + запись
+                на собеседование).
+              </p>
+            </div>
+
+            <div class="download-list d-flex justify-content-center text-center flex-column mt-3">
+              <p class="text mb-0">
+                Вы можете скачать полный список необходимых документов
+              </p>
+              <div class="wrap mt-0">
+                <a href="#" class="btn btn-more-info">Скачать</a>
+              </div>
+              <p class="text my-5">
+                Условия оформления виз для граждан других стран с видом на жительство в Укарине уточните у визового менеджера
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="main-footer" style="background-color: #1f5f98;">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 d-flex flex-column">
+                <span style="color: #fff">(с) 2019 Cruise club</span>
+                <div class="cards-currency">
+                  <img style="height: 14px; width: 46px;" class="img-cards mr-3" src="img/visa.png" alt="">
+                  <img style="height: 26px; width: 42px;" class="img-cards" src="img/master-card.png" alt="">
+                </div>
+                <span class="currency">Курс валют на 11.04.2019</span>
+                <span class="currency dollar-euro">$ - 27.50 | &euro; - 31.00</span>
+              </div>
+              <div class="col-lg-9" style="color: #fff">
+                <div class="row footer-text">
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><a href="#">Всё о
+                      круизах</a></div>
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><a href="#">Клиентам</a>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><a href="#">Агенствам</a>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><a href="#">О нас</a>
+                  </div>
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><a href="#"> Costa
+                      Cruise</a></div>
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-2 d-flex justify-content-center"><a href="#">Roya
+                      Caribbean</a></div>
+                </div>
+                <div class="row footer-info pt-3">
+                  <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <img src="img/envelope.png" class="main-img" alt="" style="height:16px; width: 20px;">
+                    <div class="email-footer pl-3">
+                      <p class="pt-0"><a href="#">cruisedav@gmail.com</a></p>
+                      <p class="pt-0"><a href="#">cruisedav@gmail.com</a></p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center">
+                    <img src="img/phone-call.png" class="call-img" alt="" style="height:18px; width: 18px;">
+                    <div class="phone-footer pl-3">
+                      <p>+38 (044) 36p0 22 33</p>
+                      <p>+38 (044) 360 22 33</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-12 col-lg-4 d-flex justify-content-center">
+                    <img src="img/placeholder.png" class="location-img" alt="" style="height:21px; width: 15px;">
+                    <p class="pl-3">01042, г. Киев, бул. Дружбы Народов, 7, оф. 11</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col d-flex justify-content-end">
+                    <p class="creat-by">CreatedBy (c) 2019</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-10"></div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+    </div>
+
+
+  </main>
+
+  <div id="phoneModal" class="modal-call">
+    <div class="header-modal d-flex justify-content-center">
+      <p>КАК С НАМИ СВЯЗАТЬСЯ</p>
+    </div>
+    <div class="body-modal">
+      <div class="body-modal-items d-flex justify-content-center align-items-center">
+        <img class="body-modal-item" src="img/phone1.png" alt="">
+        <span class="body-modal-item">+7 (985) 790 70 90</span>
+        <img class="body-modal-item" src="img/usa.png" alt="">
+      </div>
+      <div class="body-modal-items d-flex justify-content-center align-items-center">
+        <img class="body-modal-item" src="img/phone1.png" alt="">
+        <span class="body-modal-item">+7 (985) 790 70 90</span>
+        <img class="body-modal-item" src="img/usa.png" alt="">
+      </div>
+      <div class="body-modal-items d-flex justify-content-center align-items-center">
+        <img class="body-modal-item" src="img/phone1.png" alt="">
+        <span class="body-modal-item">+7 (985) 790 70 90</span>
+        <img class="body-modal-item" src="img/usa.png" alt="">
+      </div>
+      <div class="body-imgs d-flex justify-content-center">
+        <img class="body-modal-item" src="img/viber.png" alt="">
+        <img class="body-modal-item" src="img/telegram.png" alt="">
+        <img class="body-modal-item" src="img/whatsapp.png" alt="">
+      </div>
+      <div class="call-modal d-flex justify-content-center">
+        <a href="#" class="btn btn-more-info" id='orderCall'>Заказать звонок</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="callModal" class="modal-call">
+    <div class="header-modal d-flex justify-content-center">
+      <p>Заказать звонок</p>
+    </div>
+    <div class="body-modal">
+      <div class="body-modal-items mb-3 d-flex justify-content-center align-items-center">
+        <input id="" class="form-control" type="text" placeholder="Ваше имя*">
+      </div>
+      <div class="body-modal-items mb-3 d-flex justify-content-center align-items-center">
+        <input id="" class="form-control" type="text" placeholder="Номер телефона*">
+      </div>
+      <div class="body-modal-items mb-3 d-flex justify-content-center align-items-center">
+        <input id="" class="form-control" type="email" placeholder="E-mail*">
+      </div>
+      <div class="call-modal d-flex justify-content-center">
+        <a href="#" id="callMe" class="btn btn-more-info">Перезвонить мне</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="callMeModal" class="modal-call">
+    <div class="header-modal d-flex justify-content-center">
+      <p>Готово!</p>
+    </div>
+    <div class="body-modal">
+      <div class="body-modal-items mb-3 d-flex justify-content-center align-items-center">
+        <img src="img/shield.png" alt="">
+      </div>
+      <div class="body-modal-items mb-3 d-flex justify-content-center align-items-center">
+        <p>В ближайшее время наши специалисты свяжутся с Вами</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

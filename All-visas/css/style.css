@@ -1,0 +1,541 @@
+* {
+  z-index: 1;
+}
+
+*{
+  font-family: 'Montserrat',sans-serif;
+}
+body {
+  font-family: 'Montserrat',sans-serif;
+}
+
+a {
+  cursor: pointer;
+}
+
+.btn-group {
+  cursor: pointer;
+}
+
+.dropdown-menu.show {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+li.nav-item a.nav-link.text-center {
+  min-width: 117px;
+}
+
+.nav-link.btn.dropdown-toggle {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.dollar-euro {
+  font-weight: bold;
+}
+.dropdown-item {
+  padding: 0;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #2e6a9f !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ffa800 !important;
+}
+.name-cauntry {
+  font-size: 20px;
+}
+.cauntry {
+  color: #1f5f98;
+  max-width: 70%;
+}
+.wrap-cauntry {
+  background-size: contain;
+  max-width: 700px;
+
+}
+.cauntry p {
+  text-align: center;
+}
+.info img {
+  margin-right: 20px;
+}
+.info-item {
+  margin-top: 15px;
+}
+.name-cauntry, .embassy {
+  font-weight: bold;
+}
+
+header {
+  min-height: 70px;
+}
+
+.navbar-light.bg-light {
+  background-color: #fff !important;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3),
+    0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+div.bg-example {
+  height: 472px;
+}
+
+.btn.btn-more-info,
+.btn-add-review {
+  color: #123e73;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 5px 30px;
+  font-weight: bold;
+  background: linear-gradient(to right, #f3c570 0%, #ffa800 100%);
+}
+
+a.btn {
+  box-sizing: border-box;
+}
+
+.btn.btn-more-info:hover,
+.btn.btn-email:hover {
+  border-bottom: 2px solid #8c5e07;
+  height: 39px;
+}
+
+.btn-add-review:hover {
+  border-bottom: 2px solid #8c5e07;
+  height: 38px;
+}
+
+.main {
+  /* height: 1440px; */
+}
+
+.header__text {
+  color: #1f5f98;
+  font-size: 24px;
+  padding-left: 20px;
+}
+.header__text span.visa::before {
+  background: url(../img/passport.png) center center;
+  height: 38px;
+  width: 36px;
+}
+.header__text span::before {
+  position: absolute;
+  content: '';
+  left: 25px;
+  top: -3px;
+  right: 10px;
+}
+
+hr.hr {
+  border: 1px solid #1f5f98;
+  width: 100%;
+}
+input[name="email"] {
+  border-radius: 3px;
+  padding-left: 20px;
+}
+
+.main-footer {
+  padding-top: 20px;
+}
+
+.email-footer a {
+  color: #fff;
+}
+
+.email-footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.currency {
+  color: #ffa800;
+  margin-top: 5px;
+}
+
+.cards-currency {
+  margin-top: 10px;
+}
+
+.footer-text a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer-text a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-info {
+  font-size: 12px;
+}
+
+.creat-by {
+  font-size: 12px;
+}
+
+.footer-info {
+  margin-bottom: 5px;
+}
+
+
+.modal-call {
+  display: block;
+  position: fixed;
+  top: 15%;
+  left: calc((100% - 350px)/2);
+  margin: 0 auto;
+  bottom: auto;
+  padding: 30px;
+  background-color: #011F46;
+  width: 350px;
+  overflow: auto;
+  background-color: #e3fcff;
+  opacity: 0;
+  font-size: roboto;
+  border-radius: 10px;
+  transition: all .5s;
+  z-index: 0;
+}
+
+body {
+  z-index: 100;
+}
+
+#phone:hover .modal-call {
+  display: block;
+}
+
+#phoneModal {
+  z-index: 0;
+}
+
+#callModal {
+  z-index: 0;
+}
+
+#callMeModal {
+  z-index: 0;
+}
+
+.modal-call-focus {
+  opacity: 1;
+  transition: all .5s;
+}
+
+.body-modal-item {
+  margin-right: 10px;
+}
+
+.body-modal-item {
+  margin-top: 10px;
+}
+
+.header-modal p,
+.body-modal p {
+  color: #1f5f98;
+  font-size: 22px;
+  text-align: center;
+}
+
+.flag-us {
+  position: absolute;
+  top: 45px;
+  display: none;
+}
+
+.flags {
+  position: relative;
+  margin-right: 5px;
+  box-shadow: 0 0 15px rgba(91, 130, 131, 0.644);
+}
+.visa-have-with-you p {
+  text-indent: 20px;
+
+}
+.visa-have-with-you p span {
+  margin-right: 20px
+}
+
+#bg_layer {
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0);
+}
+
+.form-control:active {
+  outline: 0;
+}
+.p-text-regulations {
+  text-indent: 30px;
+}
+.visa-regulations,
+.visa-have-with-you,
+.download-list {
+  color: #3d74a6;
+}
+.visa-footer {
+  color: #1f5f98;
+  font-weight: bold;
+}
+.btn.btn-more-info{
+  color: #123e73;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 5px 30px;
+  font-weight: bold;
+  background: linear-gradient(to right, #f3c570 0%, #ffa800 100%);
+}
+a.btn {
+  box-sizing: border-box;
+}
+
+.btn.btn-more-info:hover {
+  border-bottom: 2px solid #8c5e07;
+  height: 39px;
+}
+.btn-head.btn-more-info-head {
+  color: #123e73;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 5px 30px;
+  font-weight: bold;
+  background: linear-gradient(to right, #f3c570 0%, #ffa800 100%);
+}
+
+a.btn-head {
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.btn-head.btn-more-info-head:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #8c5e07;
+  height: 39px;
+}
+.p-head-text {
+  color: #1f5f98;
+}
+
+.card-img-overlay {
+  padding: 0 !important;
+}
+
+div.card-title {
+  position: absolute;
+  margin: 0 auto;
+  bottom: 0;
+  height: 20%;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  opacity: 1;
+  background: rgba(2, 91, 133, 0.432); 
+  transition: opacity .5s;
+  text-align: center;
+}
+
+.card__hover {
+  /* display: none; */
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transition: opacity 1s, background-color .5s;
+  opacity: 0;
+}
+.nav-head {
+  min-width: 132px ;
+}
+.card {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3),
+    0 10px 10px rgba(0, 0, 0, 0.15);
+}
+.card__hover-text {
+}
+.flag-hover {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.card__hover-text-24 {
+  color: #fff;
+  font-size: 24px;
+}
+
+.card__hover-text-18 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.card__hover-img {
+  color: aqua;
+}
+
+.card:hover .card__hover {
+  display: block;
+}
+
+.card__hover:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card:hover .card-title {
+  opacity: 0;
+}
+.footer-text div {
+  margin-bottom: 20px;
+}
+.header__text span.visa::before {
+  left: 18%;
+}
+@media (max-width: 1024px) {
+  .navbar-expand-lg .navbar-nav a.nav-link {
+    padding-left: 0;
+  }
+  .header__text {
+    color: #1f5f98;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+.btn.btn-more-info {
+  font-size: 13px;
+  margin-top: 20px;
+  padding: 5px 20px;
+}
+.currency {
+  margin-bottom: 20px;
+}
+  div.card-title {
+    height: 30%;
+    font-size: 10px;
+  }
+  div.card-title-head {
+    font-size: 10px;
+  }
+.btn.btn-more-info:hover {
+  border-bottom: 2px solid #8c5e07;
+  height: 30px;
+}
+  .cards-currency,
+  .main-footer span {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card__hover-text-18 {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .card__hover-text-18 {
+    font-size: 10px;
+  }
+  a.btn.btn-more-info {
+    position: absolute;
+    padding: 10px;
+    top: 30%;
+    font-size: 19px;
+  }
+  .btn-head.btn-more-info-head {
+    margin-top: -10px;
+  }
+
+
+  a.btn.btn-more-info:hover {
+    height: 50px;
+  }
+ .btn.btn-more-info {
+   font-size: 10px;
+   margin-top: 0px;
+   padding: 5px 10px;
+ }
+ div.card-title {
+   font-size: 19px;
+ }
+ div.card-title-head {
+   font-size: 10px !important;
+ }
+ .btn.btn-more-info:hover {
+   border-bottom: 2px solid #8c5e07;
+   height: 27px;
+ }
+}
+@media (max-width: 540px) {
+    .cards-currency,
+    .main-footer span {
+      display: flex;
+      justify-content: center;
+    }
+  div.card-title {
+    height: 40%;
+    font-size: 19px;
+  }
+    .btn-head.btn-more-info-head {
+      margin-top: -15px;
+    }
+
+    a.btn.btn-more-info {
+    position: absolute;
+    padding: 20px;
+    top: 30%;
+    font-size: 19px;
+  }
+    a.btn.btn-more-info:hover {
+    height: 70px;
+  }
+  .card__hover-text-18 {
+    top: 10px;
+    position: absolute;
+  }
+}
+@media (max-width: 460px) {
+  .card__hover-text-18 {
+    display: none;
+  }
+    .btn-head.btn-more-info-head {
+      margin-top: -19px;
+      font-size: 15px;
+    }
+    .btn-head.btn-more-info-head:hover {
+      margin-top: -19px;
+      font-size: 15px;
+      height: 32px;
+    }
+
+  a.btn.btn-more-info {
+    position: absolute;
+    top: 40%;
+  }
+  
+  div.card-title {
+    font-size: 17px;
+  }
+  div.card-title-head {
+    font-size: 8px !important;
+  }
+}
+@media (max-width: 420px) {
+    .btn-head.btn-more-info-head {
+      margin-top: -39px;
+      font-size: 12px;
+    }
+    .btn-head.btn-more-info-head:hover {
+      margin-top: -39px;
+      font-size: 12px;
+      height: 28px;
+    }
+}
